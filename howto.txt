@@ -1,7 +1,7 @@
 Book Store
 
 steps to setup the project - 
-clone the project using - 
+clone the project using - https://github.com/shivam222/book-store.git
 run npm install from within the folder
 install postman to make http requests
 
@@ -38,6 +38,3 @@ book-4- isbn
 
 Unit Test-
 run command npm test
-
-Docker-
-Not using docker as currently i am not aware of it but I will learn
