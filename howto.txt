@@ -1,0 +1,43 @@
+Book Store
+
+steps to setup the project - 
+clone the project using - 
+run npm install from within the folder
+install postman to make http requests
+
+run npm start to start the the project on local server (port: 4600)
+go to postman console
+
+1) Add a new book -
+url-  http://localhost:4600/book/add
+headers- Content-Type application/json
+body- {
+	"title":"xyz",
+	"author":"abc",
+	"isbn": "unique_num",
+	"price": "10 rs"
+}
+method- post
+
+2) Search for a book - 
+url- http://localhost:4600/book/search/xyz
+method- get
+xyz can be replaced with -> title(substring), author(substring), isbn
+
+3) Search media coverage - 
+url- http://localhost:4600/book/media-coverage/isbn
+method- get
+isbn- pass isbn of the book
+
+4) Buy a book - 
+url- http://localhost:4600/book/buy/book_4
+method- post
+headers- Content-Type application/json
+book-4- isbn
+
+
+Unit Test-
+run command npm test
+
+Docker-
+Not using docker as currently i am not aware of it but I will learn
